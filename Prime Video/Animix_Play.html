@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animix Play</title>
+    <link rel="stylesheet" href="animix_play.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="./images/title_logo.jpg">
+</head>
+<body>
+
+    <!-- ----------- header ----------- -->
+    <header class="header">
+        <div class="container">
+           <div class="row">
+              <div class="logo">
+                 <a href="#"><img src="./images/logo2.webp" alt=""></a>
+              </div>
+              <button type="button" class="nav-toggler">
+                 <span></span>
+              </button>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="Animix_Play.html" class="active">home</a></li>
+                        <li><a href="anime.html">animes</a></li>
+                        <li><a href="movies.html">movies</a></li>
+                        <li><a href="web-series.html">web series</a></li>
+                        <li class="search-list"><input type="text" placeholder="Search" class="search-txt" id="myInput" onkeyup="search()">
+                            <div class="list-menu">
+                                <ul id="myUL">
+                                    <li><a href="83.html">83</a></li>
+                                    <li><a href="alita-battle.html">Alita Battle Angel</a></li>
+                                    <li><a href="aot.html">Attack On Titan</a></li>
+                                    <li><a href="">Attack On Titan: Chronicles</a></li>
+                                    <li><a href="btth.html">Battle Through The Heavens</a></li>
+                                    <li><a href="bloodshot.html">Bloodshot</a></li>
+                                    <li><a href="demonslayer.html">Demon Slayer</a></li>
+                                    <li><a href="">Demon Slayer: Mugen Train</a></li>
+                                    <li><a href="dil-bechara.html">Dil Bechara</a></li>
+                                    <li><a href="">Hello World</a></li>
+                                    <li><a href="kgf.html">KGF</a></li>
+                                    <li><a href="">Loki</a></li>
+                                    <li><a href="">Ludo</a></li>
+                                    <li><a href="">Money Heist</a></li>
+                                    <li><a href="pacific-rim.html">Pacific Rim</a></li>
+                                    <li><a href="">RRR</a></li>
+                                    <li><a href="shang-chi.html">Shang-Chi</a></li>
+                                    <li><a href="">Sonic The Hedgehog</a></li>
+                                    <li><a href="soulland.html">Soul Land</a></li>
+                                    <li><a href="">Sqiud Game</a></li>
+                                    <li><a href="">Steallar Transformations</a></li>
+                                    <li><a href="dlotik.html">The Daily Life of the Immortal King</a></li>
+                                    <li><a href="suicide-squad.html">The Suicide Squad</a></li>
+                                    <li><a href="venom2.html">Venom</a></li>
+                                    <li><a href="vincenzo.html">Vincenzo</a></li>
+                                    <li><a href="">W Two Worlds</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="profile"><a href="#" onclick="toggle()"><i class="far fa-user fa-lg"></i></a>
+                            <div class="list-menu1" id="popup">
+                                <ul>
+                                    <li><a href="">Profile</a></li>
+                                    <li><a href="">Wishlist</a></li>
+                                    <li><a href="../landing-page.html" onclick="alert('You will now Logout.')">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </header>
+
+    <!-- ----------- body starts here ----------- -->
+
+    <div class="screensaver"> </div>
+    <!-- ----------- Showcase area starts------------- -->
+
+    <div class="showcase-container" id="showcase">
+        <div class="slider">
+            <div class="slide slide1">
+                <div class="gradient">
+                    <div class="contents">
+                        <div class="stream"><span>NOW STREAMING</span></div>
+                        <div class="line1">
+                            ______________________
+                        </div>
+                        <h1>BATTLE THROUGH THE HEAVENS</h1>
+                        <p>Action, Adventure, Fantasy | 2021 | PG-13 | 23min/ep</p>
+                        <div class="btn">
+                            <a class="btn1" href="./btth.html" target="_blank"><i
+                                    class="fas fa-play"></i> Watch Now</a>
+                            <a class="btn2" href=""><i class="fas fa-heart"></i> Watch Later</a>
+                            <!-- <div class="btn"><a href="#" class="btn btn-link">More Details</a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide2">
+                <div class="gradient">
+                    <div class="contents">
+                        <div class="stream"><span>NOW STREAMING</span></div>
+                        <div class="line1">
+                            ______________________
+                        </div>
+                        <h1>SOUL LAND</h1>
+                        <p>Action, Romance, Adventure | 2014 | R | 1h 41 min</p>
+                        <div class="btn">
+                            <a class="btn1" href="./soulland.html" target="_blank"><i
+                                    class="fas fa-play"></i> Watch Now</a>
+                            <a class="btn2" href=""><i class="fas fa-heart"></i> Watch Later</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide3">
+                <div class="gradient">
+                    <div class="contents">
+                        <div class="stream"><span>NOW STREAMING</span></div>
+                        <div class="line1">
+                            ______________________
+                        </div>
+                        <h1>ATTACK ON TITAN</h1>
+                        <p>Action, Adventure, Drama | 2021 | PG-13 | 2h 35min</p>
+                        <div class="btn">
+                            <a class="btn1" href="./aot.html" target="_blank"><i class="fas fa-play"></i> Watch Now</a>
+                            <a class="btn2" href=""><i class="fas fa-heart"></i> Watch Later</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide4">
+                <div class="gradient">
+                    <div class="contents">
+                        <div class="stream"><span>NOW STREAMING</span></div>
+                        <div class="line1">
+                            ______________________
+                        </div>
+                        <h1>DEMON SLAYER</h1>
+                        <p>Action, Adventure, Fantasy | 2021 | 1h</p>
+                        <div class="btn">
+                            <a class="btn1" href="./demonslayer.html" target="_blank"><i class="fas fa-play"></i> Watch Now</a>
+                            <a class="btn2" href=""><i class="fas fa-heart"></i>Watch Later</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <div class="gradient">
+                    <div class="contents">
+                        <div class="stream"><span>NOW STREAMING</span></div>
+                        <div class="line1">
+                            ______________________
+                        </div>
+                        <h1>BATTLE THROUGH THE HEAVENS</h1>
+                        <p>Action, Adventure, Fantasy | 2021 | PG-13 | 23min/ep</p>
+                        <div class="btn">
+                            <a class="btn1" href="./btth.html" target="_blank"><i
+                                    class="fas fa-play"></i> Watch Now</a>
+                            <a class="btn2" href=""><i class="fas fa-heart"></i> Watch Later</a>
+                            <!-- <div class="btn"><a href="#" class="btn btn-link">More Details</a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------- Showcase area ends------------- -->
+
+    <!-- -----------Recommendation area starts------------- -->
+
+    <div class="recommendation">
+        <div class="rec-heading"><h1>Recommended Animes</h1></div>
+        <div class="rec-container-parent">
+            <div class="rec-container">
+                <div class="rec-card-parent">
+                    <!-- <a class="link-btn" href="./details/btth.html"> -->
+                        <div class="rec-card">
+                            <a href="btth.html">
+                                <div class="img">
+                                    <img src="./images/btth-img1.jpg" alt="">
+                                </div>
+                            </a>
+                            
+                            <div class="content">
+                                <div class="play-flex">
+                                    <div><a class="play" href="./btth.html"><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                    <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                                </div>
+                                <h2>Battle Through The Heavens</h2>
+                                Xiao Yan is the genius boy of discipline. When he was 4 years old, he started to practice asceticism.
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div>
+                <div class="rec-card-parent">
+                    <!-- <a class="link-btn" href=""> -->
+                        <div class="rec-card">
+                            <a href="soulland.html">
+                                <div class="img">
+                                    <img src="./images/soulland-img1.jpg" alt="">
+                                </div>
+                            </a>
+                            
+                            <div class="content">
+                                <div class="play-flex">
+                                    <div><a class="play" href="./soulland.html"><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                    <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                                </div>
+                                <h2>Soul Land</h2>
+                                Tang San is one of Tang Sect martial art clan's most prestigious disciples in the use of hidden weapons. 
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="./demonslayer.html">
+                            <div class="img">
+                                <img src="./images/demonslayer-img1.jpeg" alt="">
+                            </div>
+                        </a>
+                        
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href="./demonslayer.html"><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Demon Slayer</h2>
+                            A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="./dlotik.html">
+                            <div class="img">
+                                <img src="./images/dlotik-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href="./dlotik.html"><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Daily Life of the Immortal King</h2>
+                            Vanquished a powerful demon at age six, precious wizard Wang Ling now navigates high school.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="./aot.html">
+                            <div class="img">
+                                <img src="./images/aot-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href="./aot.html"><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Attack on Titan</h2>
+                            After his hometown is destroyed and his mother is killed, young Eren Jaeger.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Movies -->
+
+    <div class="recommendation">
+        <div class="rec-heading"><h1>Recommended Movies</h1></div>
+        <div class="rec-container-parent">
+            <div class="rec-container">
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="./venom2.html">
+                            <div class="img">
+                                <img src="./images/venom-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href="./video-files/movies/venom2.html"><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Venom- Let There Be Carnage</h2>
+                            A failed reporter is bonded to an alien entity, one of many symbiotes who have invaded Earth.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="shang-chi.html">
+                            <div class="img">
+                                <img src="./images/shangchi-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Shang-Chi</h2>
+                            Shang-Chi, the master of weaponry-based Kung Fu, is forced to confront his past.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="pacific-rim.html">
+                            <div class="img">
+                                <img src="./images/prim-img1.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Pacific Rim</h2>
+                            As a war between humankind and monstrous sea creatures wages on, a former pilot and a trainee are paired.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="bloodshot.html">
+                            <div class="img">
+                                <img src="./images/bloodshot-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Bloodshot</h2>
+                            Blood Shot is a quirky Action/Horror/Comedy about a Vampire who works for the United States Government.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="suicide-squad.html">
+                            <div class="img">
+                                <img src="./images/ssquad-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>The Suicide Squad</h2>
+                            Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hindi Movies -->
+    <div class="recommendation">
+        <div class="rec-heading"><h1>Some Bollywood Movies</h1></div>
+        <div class="rec-container-parent">
+            <div class="rec-container">
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="kgf.html">
+                            <div class="img">
+                                <img src="./images/kgf-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>K.G.F. Chapter-1</h2>
+                            In the 1970s, a gangster goes undercover as a slave to assassinate the owner of a notorious gold mine.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="83.html">
+                            <div class="img">
+                                <img src="./images/83-img1.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>83</h2>
+                            On June 25, 1983, the Lord's Cricket Ground witnessed 14 men beat the two times World Champions West Indies.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="dil-bechara.html">
+                            <div class="img">
+                                <img src="./images/dilbechara-img1.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Dil Bechara</h2>
+                            The emotional journey of two hopelessly in love youngsters, a young girl, Kizie, suffering from cancer, and a boy, Manny.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <img src="./images/rrr-img1.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>R.R.R</h2>
+                            A fictitious story about two legendary revolutionaries and their journey away from home.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <img src="./images/ludo-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>LUDO</h2>
+                            From a resurfaced sex tape to a rogue suitcase of money, four wildly different stories overlap at the whims of fate.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated Movies -->
+    <div class="recommendation">
+        <div class="rec-heading"><h1>Animated Movies</h1></div>
+        <div class="rec-container-parent">
+            <div class="rec-container">
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="alita-battle.html">
+                            <div class="img">
+                                <img src="./images/alita-img1.1.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Alita: Battle Angel</h2>
+                            A deactivated cyborg's revived, but can't remember anything of her past and goes on a quest to find out who she is.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <img src="./images/sonic-img1.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Sonic The Hedgehog</h2>
+                            Sequel to the 2020 live-action feature film 'Sonic the Hedgehog'.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <img src="./images/aot_chronicle-img1.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Attack on Titan: Chronicles</h2>
+                            A recap of the popular anime series Shingeki no Kyojin from seasons 1-3.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <img src="./images/helloworld.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Hello World</h2>
+                            A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <img src="./images/demonslayer_mugentrain-img1.jpeg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Demon Slayer: Mugen Train</h2>
+                            After his family was brutally murdered and his sister turned into a demon, Tanjiro Kamado's journey as a demon slayer began.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Web Series -->
+    <div class="recommendation">
+        <div class="rec-heading"><h1>Web Series</h1></div>
+        <div class="rec-container-parent">
+            <div class="rec-container">
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="vincenzo.html">
+                            <div class="img">
+                                <img src="./images/vincenzo-img1.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href="vincenzo.html"><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Vincenzo</h2>
+                            During a visit to his motherland, a Korean-Italian mafia lawyer gives an unrivaled conglomerate.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <img src="./images/moneyheist-img1.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Money Heist</h2>
+                            An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <img src="./images/w-img1.jpeg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>W- Two Worlds</h2>
+                            Han Hyo-joo plays a surgeon whose father is a comic book creator. She gets kidnapped which is where story begins.  
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <img src="./images/loki-img1.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Loki</h2>
+                            The mercurial villain Loki resumes his role as the God of Mischief in a new series.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <img src="./images/squidgame-img1.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Squid Game</h2>
+                            A survival game that has a whopping 45.6 billion-won prize at stake.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Recommendation area ends------------- -->
+
+    <!-- Thank you -->
+    <div class="thanks">Thanks for visiting...</div>
+    <div class="more-soon">More content to be added soon</div>
+
+    <!-- ----------- footer ----------- -->
+    <footer class="footer">
+        <div class="footer-img"><img src="./images/logo2.webp" class="footer-img"></div>
+        <div>
+            <ul class="footer-list">
+                <li><a href="">Terms and Privacy Notice</a></li>
+                <li><a href="./feedback.html">Send us feedback</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="footer-extra">&copy;&ensp;2021-2022, Animix.com, Inc. or its affiliates</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- search and navbar script -->
+   <script src="new_header.js"></script>
+   <script>
+      const search = () =>{
+      let filter = document.getElementById('myInput').value.toUpperCase();
+
+      let ul = document.getElementById('myUL');
+
+      let li = ul.getElementsByTagName('li');
+
+      for(var i=0; i<li.length;i++)
+      {
+         let a = li[i].getElementsByTagName('a')[0];
+
+         let textValue = a.textContent || a.innerHTML;
+
+         if(textValue.toUpperCase().indexOf(filter)> -1)
+         {
+            li[i].style.display = '';
+         }
+         else{
+            li[i].style.display = 'none';
+         }
+      }
+   }
+   </script>
+
+   <script>
+       function toggle(){
+           var popup=document.getElementById('popup');
+           popup.classList.toggle('active');
+       }
+   </script>
+
+    <!-- For smooth scrolling -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack on Titan | Animix Play</title>
+    <link rel="stylesheet" href="new_header.css">
+    <link rel="stylesheet" href="play-page.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="./images/title_logo.jpg">
+    <style>
+        .section{
+        height: 75vh;
+        width: 100vw;
+        background-image: url(./images/aot-img2.jpg);
+        background-position: center right;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- ----------- header ----------- -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="#"><img src="./images/logo2.webp" alt=""></a>
+                </div>
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="Animix_Play.html">home</a></li>
+                        <li><a href="anime.html">animes</a></li>
+                        <li><a href="movies.html">movies</a></li>
+                        <li><a href="web-series.html">web series</a></li>
+                        <li class="search-list"><input type="text" placeholder="Search" class="search-txt" id="myInput" onkeyup="search()">
+                            <div class="list-menu">
+                                <ul id="myUL">
+                                    <li><a href="83.html">83</a></li>
+                                    <li><a href="alita-battle.html">Alita Battle Angel</a></li>
+                                    <li><a href="aot.html">Attack On Titan</a></li>
+                                    <li><a href="">Attack On Titan: Chronicles</a></li>
+                                    <li><a href="btth.html">Battle Through The Heavens</a></li>
+                                    <li><a href="bloodshot.html">Bloodshot</a></li>
+                                    <li><a href="demonslayer.html">Demon Slayer</a></li>
+                                    <li><a href="">Demon Slayer: Mugen Train</a></li>
+                                    <li><a href="dil-bechara.html">Dil Bechara</a></li>
+                                    <li><a href="">Hello World</a></li>
+                                    <li><a href="kgf.html">KGF</a></li>
+                                    <li><a href="">Loki</a></li>
+                                    <li><a href="">Ludo</a></li>
+                                    <li><a href="">Money Heist</a></li>
+                                    <li><a href="pacific-rim.html">Pacific Rim</a></li>
+                                    <li><a href="">RRR</a></li>
+                                    <li><a href="shang-chi.html">Shang-Chi</a></li>
+                                    <li><a href="">Sonic The Hedgehog</a></li>
+                                    <li><a href="soulland.html">Soul Land</a></li>
+                                    <li><a href="">Sqiud Game</a></li>
+                                    <li><a href="">Steallar Transformations</a></li>
+                                    <li><a href="dlotik.html">The Daily Life of the Immortal King</a></li>
+                                    <li><a href="suicide-squad.html">The Suicide Squad</a></li>
+                                    <li><a href="venom2.html">Venom</a></li>
+                                    <li><a href="vincenzo.html">Vincenzo</a></li>
+                                    <li><a href="">W Two Worlds</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="profile"><a href="#" onclick="toggle()"><i class="far fa-user fa-lg"></i></a>
+                            <div class="list-menu1" id="popup">
+                                <ul>
+                                    <li><a href="">Profile</a></li>
+                                    <li><a href="">Wishlist</a></li>
+                                    <li><a href="../landing-page.html" onclick="alert('You will now Logout.')">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </header>
+
+    <!-- ----------- body ----------- -->
+    
+    <!-- top image and info -->
+    <div class="blank"> </div>
+    <div class="section">
+        <div class="gradient1">
+            <div class="gradient2">
+                <div class="sec-content">
+                    <h1>Attack on Titan</h1>
+                    <div class="head-comp"><i class="fab fa-imdb fa-lg"></i> &nbsp;9.0&emsp;98min&emsp;Ongoing</div>
+                    <p>100 years ago, titans suddenly appeared on Earth. Soon, human civilization veered on collapse due to the titans. Humans then built a giant wall to defend themselves. Within the giant walls, humans lived in peace, but, 100 years later, the giant wall is broken.</p>
+                    <div class="btn">
+                        <a class="btn1" href="#seasons"><i class="fas fa-play"></i>&nbsp;Watch Now</a>
+                        <a href="#" class="btn2" title="Add to Watchlist"><i class="fas fa-plus fa-lg"></i></a>
+                    </div>
+                    <!-- side info -->
+                    <div class="side-info">
+                        <div class="grid grid1">
+                            <ul>
+                                <li>Released</li>
+                                <li>Seasons</li>
+                                <li>Director</li>
+                                <li>Stars</li>
+                                <li>Genres</li>
+                                <li>Production</li>
+                            </ul>
+                        </div>
+                        <div class="grid grid2">
+                            <ul>
+                                <li>2015</li>
+                                <li>1</li>
+                                <li>Tetsurō Arak</li>
+                                <li>Novel</li>
+                                <li>Action, Fantasy</li>
+                                <li>Martial Arts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Episodes List -->
+
+    <div class="season-container" id="seasons">
+        <div class="season-dropdown">
+            <!-- <select id="mySelect" onchange="mySelectfunction()" class="form-control">
+                <option value="season4-s">Three Year Agreement</option>
+                <option value="season4">Season 4</option>
+                <option value="season3">Season 3</option>
+                <option value="season2-s">Season 2 Specials</option>
+                <option value="season2">Season 2</option>
+                <option value="season1-s">Season 1 Specials</option>
+                <option value="season1">Season 1</option>
+            </select> -->
+        </div>
+
+        <div id="season4" class="ep1">
+            <h2 class="season-heading">...Season 4...</h2>
+            <div class="episodes">
+                <a href="" class="ep-btn">Episode 1</a>
+                <a href="" class="ep-btn">Episode 2</a>
+                <a href="" class="ep-btn">Episode 3</a>
+                <a href="" class="ep-btn">Episode 4</a>
+                <a href="" class="ep-btn">Episode 5</a>
+                <a href="" class="ep-btn">Episode 6</a>
+                <a href="" class="ep-btn">Episode 7</a>
+                <a href="" class="ep-btn">Episode 8</a>
+                <a href="" class="ep-btn">Episode 9</a>
+                <a href="" class="ep-btn">Episode 10</a>
+                <a href="" class="ep-btn">Episode 11</a>
+                <a href="" class="ep-btn">Episode 12</a>
+                <a href="" class="ep-btn">Episode 13</a>
+                <a href="" class="ep-btn">Episode 14</a>
+                <a href="" class="ep-btn">Episode 15</a>
+                <a href="" class="ep-btn">Episode 16</a>
+                <a href="" class="ep-btn">Episode 17</a>
+                <a href="" class="ep-btn">Episode 18</a>
+            </div>
+        </div>
+    </div>
+    <!-- Related Content -->
+    <div class="related">
+        <h2 class="rel-heading"><u>Related Animes</u> </h2>
+        <div class="rec-container-parent">
+            <div class="rec-container">
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="">
+                            <div class="img">
+                                <a href="#"><img src="./images/stellartransformations-img1.jpg" alt=""></a>
+                            </div>
+                        </a>
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Stellar Transformations</h2>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum amet blanditiis praesentium sequi! Quis iste, tempore iure harum sit consequatur!
+                        </div>
+                    </div>
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="btth.html">
+                            <div class="img">
+                                <img src="./images/btth-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Battle Through The Heavens</h2>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum amet blanditiis praesentium sequi! Quis iste, tempore iure harum sit consequatur!
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="soulland.html">
+                            <div class="img">
+                                <img src="./images/soulland-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Soul Land</h2>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum amet blanditiis praesentium sequi! Quis iste, tempore iure harum sit consequatur!
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="demonslayer.html">
+                            <div class="img">
+                                <img src="./images/demonslayer-img1.jpeg" alt="">
+                            </div>
+                        </a>
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Demon Slayer</h2>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum amet blanditiis praesentium sequi! Quis iste, tempore iure harum sit consequatur!
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rec-card-parent">
+                    <div class="rec-card">
+                        <a href="dlotik.html">
+                            <div class="img">
+                                <img src="./images/dlotik-img1.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="content">
+                            <div class="play-flex">
+                                <div><a class="play" href=""><i class="fas fa-play fa-xs"></i></a>&ensp;Play Now</div>
+                                <div><a class="wishlist" href=""><i class="fas fa-plus fa-xs"></i></a></div>
+                            </div>
+                            <h2>Daily Life of the Immortal King</h2>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum amet blanditiis praesentium sequi! Quis iste, tempore iure harum sit consequatur!
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thank You Area -->
+    <div class="thanks">Enjoy Your Stream</div>
+    <div class="more-soon">More content on its way...</div>
+
+    <!-- ----------- footer ----------- -->
+    <footer class="footer">
+        <div class="footer-img"><img src="./images/logo2.webp" class="footer-img"></div>
+        <div>
+            <ul class="footer-list">
+                <li><a href="">Terms and Privacy Notice</a></li>
+                <li><a href="feedback.html">Send us feedback</a></li>
+                <li><a href="aboutus.html">AboutUs</a></li>
+                <li>&copy;&ensp;1996-2022, Amazon.com, Inc. or its affiliates</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- search and navbar script -->
+   <script src="new_header.js"></script>
+   <script>
+      const search = () =>{
+      let filter = document.getElementById('myInput').value.toUpperCase();
+
+      let ul = document.getElementById('myUL');
+
+      let li = ul.getElementsByTagName('li');
+
+      for(var i=0; i<li.length;i++)
+      {
+         let a = li[i].getElementsByTagName('a')[0];
+
+         let textValue = a.textContent || a.innerHTML;
+
+         if(textValue.toUpperCase().indexOf(filter)> -1)
+         {
+            li[i].style.display = '';
+         }
+         else{
+            li[i].style.display = 'none';
+         }
+      }
+   }
+   </script>
+   <script>
+    function toggle(){
+        var popup=document.getElementById('popup');
+        popup.classList.toggle('active');
+    }
+</script>
+   <script src="./season-dropdown.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script> 
+</body>
+</html>

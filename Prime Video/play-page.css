@@ -1,0 +1,404 @@
+.blank{
+    padding-top: 70px;
+}
+
+.gradient1{
+    /* position: relative; */
+    height: 80vh;
+    background-image: linear-gradient(
+        to right,
+        rgb(15, 23, 30) 40%,
+        /* rgba(31, 29, 53, 0.8) 50%, */
+        rgba(21, 18, 41, 0) 70%
+    );
+}
+.gradient2{
+    /* position: relative; */
+    height: 80vh;
+    background-image: linear-gradient(
+        to top,
+        rgb(15, 23, 30) 10%,
+        /* rgba(31, 29, 53, 0.8) 50%, */
+        rgba(21, 18, 41, 0) 70%
+    );
+}
+.sec-content{
+    width: 55vw;
+    padding: 50px;
+}
+.sec-content h1{
+    color: #e7ecf1;
+}
+.sec-content .head-comp{
+    color: rgb(153, 153, 168);
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fab{
+    font-weight: 200;
+}
+.sec-content p{
+    color: white;
+    font-weight: 600;
+}
+.btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 30px 0;
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 150px;
+    background: #2c97c9;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 7px;
+}
+.btn1:hover{
+    background: #59abda;
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: rgb(104, 104, 107);
+    color: white;
+    transition: width 0.5s;overflow: hidden;
+}
+.btn2:hover{
+    background: rgb(140, 140, 145);
+    /* width: 160px; */
+}
+.side-info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.grid{
+    align-items: center;
+    margin-right: 30px;
+}
+.grid1{
+    color: rgb(164, 164, 177);
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+.grid2{
+    color: #84bff7;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+/* Episodes List Styling */
+
+.season-dropdown {
+  position: relative;
+  display: block;
+  width: 350px;
+  margin: auto;
+  margin-top: -20px;
+  border-radius: 10px;
+  padding-top: 90px;
+}
+
+select {
+  background: rgba(15, 115, 155, 0.897);
+  background-image: none;
+  width: 100%;
+  min-width: 200px;
+  height: 4rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px rgba(37, 46, 100, 0.692);
+  border-radius: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.ep1{
+  padding: 20px 50px;
+  padding-top: 50px;
+}
+.ep{
+    display: none;
+    padding: 20px 50px;
+}
+.season-heading{
+    text-align: center;
+    color: whitesmoke;
+}
+.episodes{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    flex-wrap: wrap
+}
+.ep-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    margin: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    filter: blur(0.3px);
+    color: rgb(65, 202, 236);
+    text-shadow: 1px 1px 1px rgb(153, 214, 229);
+    background: #36454f;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px #aaa;
+    
+}
+.ep-btn:hover{
+    background: rgb(46, 47, 48);
+    box-shadow: 0px 5px 10px 0px rgb(100, 99, 99);
+}
+
+/* Related Content Styling */
+.related{
+    padding: 30px 20px 20px 40px;
+}
+.rel-heading{
+    padding-bottom: 60px;
+    text-align: center;
+    color: whitesmoke;
+}
+  .rec-container{
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+  }
+  .rec-card-parent{
+    height: 172px;
+    width: 20%;
+    margin-right: 10px;
+    /* transition: all 0.5s ease-in-out; */
+  }
+  .rec-card{
+    height: 100%;
+    width: 100%;
+    /* margin-right: 10px; */
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  .img img{
+    height: 172px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .content{
+    width: 100%;
+    color: #fff;
+    /* height: 0; */
+    padding: 10px;
+    padding-top: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    font-size: 67.5%;
+  }
+  .play-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    /* padding: 0 10px; */
+  }
+  .rec-card-parent:hover > .rec-card{
+    transform: scale(1.1);
+    border: 2px solid #79b8f3;
+    border-radius: 8px;
+    background: rgb(26 , 36, 47);
+    height: auto;
+    overflow: visible;
+  }
+  .rec-card:hover > .content{
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+  }
+  .content .play{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30px;
+    width: 30px;
+    font-size: 1.15rem;
+    background: rgb(15, 14, 14);
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+  }
+  .content .play:hover{
+    background: #79b8f3;
+    border: none;
+  }
+  .wishlist{
+    color: white;
+  }
+  .wishlist:hover{
+    color: #79b8f3;
+  }
+
+  /* Thanks Styling */
+  .thanks{
+    margin: 20px; margin-bottom: 0;
+    padding-top: 10px;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+  }
+  .more-soon{
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+
+    /* Making Responsive */
+
+@media(max-width:1400px){
+  .rec-card-parent, .rec-card, .img img{
+    height: 150px;
+  }
+}
+@media(max-width:1250px){
+  .rec-card-parent, .rec-card, .img img{
+    height: 130px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+@media(max-width:1100px){
+  .related{
+    overflow-x: scroll;
+  }
+  .rec-container{
+    width: 145vw;
+  }
+  .rec-card-parent, .rec-card, .img img{
+    height: 170px;
+  }
+  .rec-card-parent:hover > .rec-card{
+    height: 170px;
+    overflow: hidden;
+  }
+  .rec-card:hover > .content{
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+
+@media(max-width:950px){
+  .nav-toggler{
+    display: block;
+  }
+  .header .nav{
+    width: 100%;
+    padding:0;
+    max-height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+  .header .nav.open{
+    visibility: visible;
+  }
+  .header .nav ul{
+    padding:12px 15px 0;
+    margin-top: 12px;
+    border-top:1px solid rgba(255,255,255,0.2);
+  }
+  .header .nav ul li{
+    display: block;
+    margin:0;
+  }
+  .search-list:hover .list-menu{
+      margin-left: 0px;
+  }
+  .footer-extra{
+    display: none;
+  }
+  .rec-container{
+    width: 135vw;
+  }
+  .rec-card-parent, .rec-card, .img img{
+    height: 150px;
+  }
+  .rec-card-parent:hover > .rec-card{
+    height: 150px;
+  }
+  .thanks{
+    font-size: 1.5rem;
+  }
+  .more-soon{
+    font-size: 1.2rem;
+  }
+}
+@media(max-width:800px){
+  .rec-container{
+    width: 1080px;
+  }
+  .rec-card-parent, .rec-card, .img img{
+    height: 140px;
+  }
+  .contents .stream span{
+    font-size: 1rem;
+  }
+  .line1{
+    font-size: 1.08rem;
+  }
+  .contents h1{
+    font-size: 1.25rem;
+    margin-top: 120px;
+  }
+  .contents p{
+    font-size: 0.75rem;
+    padding-bottom: 0;
+  }
+}
+@media(max-width:600px){
+  .showcase-container{
+    height: 40vh;
+  }
+  .contents{
+    margin-top: -200px;
+    margin-left: -50px;
+  }
+  .contents h1{
+    margin-top: 90px;
+  }
+  .contents p{
+    display: none;
+  }
+}
+@media(max-width:400px){
+  .btn > .btn1, .btn > .btn2{
+    height: 35px;
+    width: 100px;
+    font-size: 14px;
+  }
+}

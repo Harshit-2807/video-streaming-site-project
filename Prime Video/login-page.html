@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="./images/title_logo.jpg">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .video{
+            position: fixed;
+            right: 0;
+            top: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        .loginbox{
+            width: 400px;
+            height: 480px;
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 5px 10px 0px #aaa;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            border:3px solid rgb(66, 144, 233);
+            border-radius: 20px;
+            padding: 70px 30px;
+        }
+        h1{
+            margin-top: -30px;
+            padding-bottom: 20px;
+            text-align: center;
+            color: rgb(85, 160, 247);
+        }
+        .loginbox p{
+            margin: 0;
+            padding: 0;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: white;
+        }
+        .loginbox input{
+            width: 100%;
+            margin-bottom:20px ;
+        }
+        .loginbox input[type="text"], input[type="password"]
+        {
+            border:none;
+            border-bottom:1px solid #000;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: rgb(8, 8, 8);
+            font-size: 16px;
+            font-weight: bolder;
+        }
+        .loginbox input[type="submit"]
+        {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: rgba(40, 206, 206, 0.61);
+            color: black;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        .loginbox input[type="submit"]:hover{
+            cursor: pointer;
+            background: rgba(22, 128, 128, 0.61);
+            color: rgb(241, 236, 236);
+        } 
+        .checkbox{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            padding-bottom: 10px;
+        }
+        .loginbox input[type="checkbox"]{
+            width: fit-content;
+            margin-top: 6px;
+        }
+        .blankspace{
+            width: 80px;
+        }
+        .loginbox a{
+            text-decoration: none;
+            /* font-size: 12px; */
+            line-height: 20px;
+            color: white;
+        }
+        .loginbox a:hover{
+            color: rgb(36, 142, 241);
+        }
+
+    </style>
+</head>
+<body>
+    <video src="./video4.mp4" autoplay muted loop class="video"></video>
+    <div class="loginbox">
+        <div class="login-data">
+            <h1>Login Here</h1> 
+            <form action="./Animix_Play.html">
+                <p>Username</p>
+                <input type="text" name="" placeholder="Happyuser1234" required>
+                <p>Password</p>
+                <input type="password" name="" placeholder="user12.34" maxlength="10" minlength="6" required>
+                <input type="submit" name="" value="Login" onclick="alert('Welcome to AniMix Play, you are now logged in..')">
+                <pre></pre>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="checkbox">
+                    <label for="checkbox">Remember Me</label>
+                    <div class="blankspace"></div>
+                    <a href="">Forget Password?</a>
+                </div>
+                Don't have an account?&nbsp;<a href="signup-page.html"><u>Sign-up</u> </a>
+            </form>
+        </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback | Animix Play</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="new_header.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="icon" href="./images/title_logo.jpg">
+  <style>
+      body {
+        background: rgba(0, 0, 0, 0.9);
+        box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+        /* height: 95vh; */
+        }
+
+        main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+        height: 95vh;
+        }
+
+        .title {
+        font-size: 50px;
+        font-weight: bold;
+        padding: 1% 0;
+        margin-top: -10%;
+        color: white;
+        }
+
+        .title-info {
+        padding-bottom: 2%;
+        color: white;
+        }
+
+        .form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 2%;
+        }
+
+        .input-group,
+        .textarea-group {
+        padding: 1% 0;
+        }
+
+        input,
+        textarea {
+        color: white;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #757575;
+        padding: 2.5% 1.5%;
+        font-size: 20px;
+        }
+        
+
+        input:focus,
+        textarea:focus {
+        background-color: transparent;
+        outline: transparent;
+        border-bottom: 2px solid rgb(42, 205, 254);
+        }
+
+        label {
+        color: #757575;
+        position: relative;
+        left: 0.5em;
+        top: -2em;
+        cursor: auto;
+        transition: 0.3s ease all;
+        }
+
+        /* .button-div {
+        display: flex;
+        justify-content: center;
+        } */
+
+        button {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-top: 30px;
+            width: 200px;
+            border: 1px solid;
+            border-color: #212121;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 30px;
+            background-color: rgb(42, 205, 254);
+            color: black;
+            /* font-style: bold; */
+            box-shadow: 0 0 10px #212121;
+        }
+
+        button:hover {
+        background-color: #424242;
+        color: rgb(42, 205, 254);
+        cursor: pointer;
+        }
+        #send{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-top: 30px;
+            width: 200px;
+            border: 1px solid;
+            border-color: #212121;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 30px;
+            background-color: rgb(42, 205, 254);
+            color: black;
+            /* font-style: bold; */
+            box-shadow: 0 0 10px #212121;
+        }
+
+        #send:hover {
+        background-color: #424242;
+        color: rgb(42, 205, 254);
+        cursor: pointer;
+        }
+        /* #home{
+            width: 250px;
+            display: none;
+        }
+        #home.active{
+            display: block;
+        } */
+
+        .form-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        }
+
+
+        /* Media queries */
+
+        @media screen and (max-width: 1200px) {
+        .form {
+            width: 70%;
+        }
+        }
+
+        @media screen and (max-width: 680px) {
+        .form {
+            width: 90%;
+        }
+        .title {
+            margin-top: 5%;
+            font-size: 43px;
+        }
+        button {
+            font-size: 20px;
+        }
+        .contact-container {
+            font-size: 150%;
+        }
+        }
+
+        @media screen and (max-width: 1080px) {
+        body {
+            height: 100vh;
+        }
+        .form {
+            width: 90%;
+        }
+        .title {
+            margin-top: 10%;
+        }
+        }
+
+        @media screen and (max-width: 500px) {
+        body {
+            height: 100vh;
+        }
+        .title {
+            font-size: 40px;
+            padding-top: 6%;
+            margin-top: 10%;
+        }
+
+        .title-info {
+            font-size: 13px;
+        }
+
+        .form {
+            padding: 6% 4%;
+            padding-top: 15%;
+        }
+
+        .input-group,
+        .textarea-group {
+            padding: 3% 0;
+        }
+
+        input,
+        textarea {
+            font-size: 15px;
+        }
+
+        input:focus ~ label,
+        input:not(:placeholder-shown) ~ label {
+            top: -3.5em;
+            left: 0.1em;
+        }
+
+        textarea:focus ~ label,
+        textarea:not(:placeholder-shown) ~ label {
+            top: -8.5em;
+            left: 0.2em;
+        }
+
+        button {
+            font-size: 15px;
+        }
+        .form-container {
+            flex-direction: column;
+        }
+        .contact-info {
+            justify-content: flex-start;
+        }
+    }
+
+  </style>
+</head>
+<body>
+   
+
+   <!-- ----------- header ----------- -->
+   <header class="header">
+      <div class="container">
+         <div class="row">
+            <div class="logo">
+               <a href="#"><img src="./images/logo2.webp" alt=""></a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+              <nav class="nav">
+                  <ul>
+                      <li><a href="Animix_Play.html">home</a></li>
+                      <li><a href="anime.html">animes</a></li>
+                      <li><a href="movies.html">movies</a></li>
+                      <li><a href="web-series.html">web series</a></li>
+                      <li class="search-list"><input type="text" placeholder="Search" class="search-txt" id="myInput" onkeyup="search()">
+                          <div class="list-menu">
+                              <ul id="myUL">
+                                  <li><a href="83.html">83</a></li>
+                                  <li><a href="alita-battle.html">Alita Battle Angel</a></li>
+                                  <li><a href="aot.html">Attack On Titan</a></li>
+                                  <li><a href="">Attack On Titan: Chronicles</a></li>
+                                  <li><a href="btth.html">Battle Through The Heavens</a></li>
+                                  <li><a href="bloodshot.html">Bloodshot</a></li>
+                                  <li><a href="demonslayer.html">Demon Slayer</a></li>
+                                  <li><a href="">Demon Slayer: Mugen Train</a></li>
+                                  <li><a href="dil-bechara.html">Dil Bechara</a></li>
+                                  <li><a href="">Hello World</a></li>
+                                  <li><a href="kgf.html">KGF</a></li>
+                                  <li><a href="">Loki</a></li>
+                                  <li><a href="">Ludo</a></li>
+                                  <li><a href="">Money Heist</a></li>
+                                  <li><a href="pacific-rim.html">Pacific Rim</a></li>
+                                  <li><a href="">RRR</a></li>
+                                  <li><a href="shang-chi.html">Shang-Chi</a></li>
+                                  <li><a href="">Sonic The Hedgehog</a></li>
+                                  <li><a href="soulland.html">Soul Land</a></li>
+                                  <li><a href="">Sqiud Game</a></li>
+                                  <li><a href="">Steallar Transformations</a></li>
+                                  <li><a href="dlotik.html">The Daily Life of the Immortal King</a></li>
+                                  <li><a href="suicide-squad.html">The Suicide Squad</a></li>
+                                  <li><a href="venom2.html">Venom</a></li>
+                                  <li><a href="vincenzo.html">Vincenzo</a></li>
+                                  <li><a href="">W Two Worlds</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="profile"><a href="#" onclick="toggle()"><i class="far fa-user fa-lg"></i></a>
+                          <div class="list-menu1" id="popup">
+                              <ul>
+                                  <li><a href="">Profile</a></li>
+                                  <li><a href="">Wishlist</a></li>
+                                  <li><a href="../landing-page.html" onclick="alert('You will now Logout.')">Logout</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+   </header>
+
+   <!-- ------------body------------- -->
+   <br><br><br><br><br><br>
+   <main>
+        <div class="title">Give Your Feedback</div>
+        <div class="title-info">Tell Us What You Liked !!</div>
+
+        <div class="form-container">
+            <form action="./Animix_Play.html" class="form">
+                <div class="submit-div">
+                    <!-- <div class="input-group"> -->
+                        <input type="text" name="first_name" id="first-name" placeholder="First Name" required>
+                        <!-- </div> -->
+        
+        
+                        <!-- <div class="input-group"> -->
+                            <input type="text" name="last_name" id="last-name" placeholder="Last Name">
+                        <!-- </div> -->
+        
+        
+                        <!-- <div class="input-group"> -->
+                            <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required>
+                        <!-- </div> -->
+        
+        
+                        <!-- <div class="textarea-group"> -->
+                            <textarea name="message" id="message" rows="5" placeholder="Message" required></textarea>
+                        <!-- </div> -->
+        
+        
+                        <!-- <div class="button-div"> -->
+                            <!-- <button  id="send" onclick="send()">Send</button> -->
+                            <input type="submit" value="Send" id="send" onclick="send(), alert('Thanks for your valuable feedback.')">
+                            
+                </div>
+                <!-- <button id="home" onclick="send()">Back To Home</button> -->
+                    
+                <!-- </div> -->
+            </form>
+        </div>
+    </main>
+
+   <!-- ----------- footer ----------- -->
+   <footer class="footer">
+      <div class="footer-img"><img src="./images/logo2.webp" class="footer-img"></div>
+      <div>
+          <ul class="footer-list">
+              <li><a href="">Terms and Privacy Notice</a></li>
+              <li><a href="./feedback.html">Send us feedback</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li class="footer-extra">&copy;&ensp;2021-2022, Animix.com, Inc. or its affiliates</li>
+          </ul>
+      </div>
+  </footer>
+
+
+  <!-- search and navbar script -->
+ <script src="new_header.js"></script>
+ <script>
+    const search = () =>{
+    let filter = document.getElementById('myInput').value.toUpperCase();
+
+    let ul = document.getElementById('myUL');
+
+    let li = ul.getElementsByTagName('li');
+
+    for(var i=0; i<li.length;i++)
+    {
+       let a = li[i].getElementsByTagName('a')[0];
+
+       let textValue = a.textContent || a.innerHTML;
+
+       if(textValue.toUpperCase().indexOf(filter)> -1)
+       {
+          li[i].style.display = '';
+       }
+       else{
+          li[i].style.display = 'none';
+       }
+    }
+ }
+ </script>
+
+
+ <script>
+     function toggle(){
+         var popup=document.getElementById('popup');
+         popup.classList.toggle('active');
+        //  var home=document.getElementById('home');
+        //  home.classList.toggle('active');
+        //  var replace=document.getElementsByClassName('submit-div');
+        //  replace.style.display='none';
+     }
+ </script>
+
+<!-- <script>
+    function replace(){
+        let replace=document.getElementById('home');
+        replace.style.display="block";
+    }
+</script> -->
+
+<script>
+    function send(){
+        location.replace("./Animix_Play.html");
+    }
+</script>
+
+  <!-- For smooth scrolling -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+</body>
+</html>

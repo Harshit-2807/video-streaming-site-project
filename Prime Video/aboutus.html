@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AboutUs | Animix Play</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="new_header.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="./images/title_logo.jpg">
+        <style>
+        .screensaver{
+            padding-top: 70px;
+        }
+        .about-site{
+            height: 70vh;
+            width: 100%;
+            background-image: url(./images/aboutus-img1.jpg);
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: 55vw 100%;
+        }
+        .text{
+            width: 46vw;
+            height: 100%;
+            padding: 50px;
+        }
+        .text h2{
+            padding: 5px;
+            padding-left: 15px;
+            /* backdrop-filter: blur(10px); */
+            font-family: cursive;
+            font-size: 3rem;
+            color: white;
+            background: linear-gradient(to right, rgba(8, 117, 190, 0.7) 0%, rgba(74, 173, 238, 0.2) 40%, rgba(0, 0, 0, 0) 50%);
+            margin-bottom: 20px;
+        }
+        .text p{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: white;
+            text-align: justify;
+        }
+        /* ---------- members styling ---------- */
+        .about-members{
+            max-width: 1200px;
+            width: 90%;
+            margin: auto;
+            padding-top: 70px;
+        }
+        .members-heading{
+            margin: 50px;
+            margin-top: 20px;
+            padding: 5px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 60px;
+            font-size: 3rem;
+            font-family: cursive;
+            color: white;
+            border-radius: 6px;
+            border: 2px solid white;
+            text-shadow: 0px 0px 20px rgb(204, 37, 226);
+            box-shadow: 0px 0px 20px rgb(23, 130, 230);
+        }
+        .members-flex{
+            margin: auto;
+        }
+        .data-show{
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 30px rgb(31, 219, 178);
+        }
+        .show1{
+            background-image: url(./images/box1-background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .show2{
+            background-image: url(./images/box2-background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .show3{
+            background-image: url(./images/box3-background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .members-img{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .members-img img{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            zoom: 120%;
+        }
+        .members-img .mypic{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+        }
+        .member-description{
+            margin: 50px;
+            height: 250px;
+        }
+        .member-description h2, .member-description p, .icons{
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .member-description h2{
+            font-size: 2.5rem;
+            margin: 30px 0 15px 0;
+            color: white;
+        }
+        .member-description p{
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: rgb(200, 251, 255);
+        }
+        .icons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 30px;
+        }
+        .icons a{
+            font-size: 2rem;
+            color: rgb(200, 251, 255);
+        }
+        .icons a:hover{
+            color: rgb(31, 219, 178);
+        }
+        .donation{
+            /* height: 20vh; */
+            width: 100%;
+            margin-top: -50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 50px 0 50px;
+            background: rgba(0, 0, 0, 0.705);
+            /* padding-bottom: 10px; */
+        }
+        .donation p{
+            padding: 50px;
+            padding-top: 0;
+            text-align: justify;
+            width: 75%;
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: white;
+        }
+        .donation a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            margin-top: -50px;
+            margin-right: 20px;
+            padding: 12px 20px;
+            border-radius: 5px;
+            background: turquoise;
+            font-size: 1.3rem;
+            color: black;
+            font-weight: 500;
+            box-shadow: 0px 0px 30px rgb(31, 219, 178);
+        }
+        .scanner-img img{
+            height: 600px;
+            width: 500px;
+            position: fixed;
+            top: 13%;
+            left: 28%;
+            display: none;
+        }
+        .main-content.active{
+            filter: blur(20px);
+        }
+        .disclaimer{
+            background: rgba(0, 0, 0, 0.705);
+        }
+        .disclaimer h2{
+            padding: 0 100px 15px 80px;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+        .disclaimer p{
+            padding: 0 100px 40px 100px;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: white;
+        }
+        .disclaimer a{
+            color: white;
+            text-decoration: underline;
+        }
+        .disclaimer a:hover{
+            color: turquoise;
+        }
+
+    </style>
+</head>
+<body>
+   
+
+   <!-- ----------- header ----------- -->
+   <header class="header">
+      <div class="container">
+         <div class="row">
+            <div class="logo">
+               <a href="#"><img src="./images/logo2.webp" alt=""></a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+              <nav class="nav">
+                  <ul>
+                      <li><a href="Animix_Play.html">home</a></li>
+                      <li><a href="anime.html">animes</a></li>
+                      <li><a href="movies.html">movies</a></li>
+                      <li><a href="web-series.html">web series</a></li>
+                      <li class="search-list"><input type="text" placeholder="Search" class="search-txt" id="myInput" onkeyup="search()">
+                          <div class="list-menu">
+                              <ul id="myUL">
+                                  <li><a href="83.html">83</a></li>
+                                  <li><a href="alita-battle.html">Alita Battle Angel</a></li>
+                                  <li><a href="aot.html">Attack On Titan</a></li>
+                                  <li><a href="">Attack On Titan: Chronicles</a></li>
+                                  <li><a href="btth.html">Battle Through The Heavens</a></li>
+                                  <li><a href="bloodshot.html">Bloodshot</a></li>
+                                  <li><a href="demonslayer.html">Demon Slayer</a></li>
+                                  <li><a href="">Demon Slayer: Mugen Train</a></li>
+                                  <li><a href="dil-bechara.html">Dil Bechara</a></li>
+                                  <li><a href="">Hello World</a></li>
+                                  <li><a href="kgf.html">KGF</a></li>
+                                  <li><a href="">Loki</a></li>
+                                  <li><a href="">Ludo</a></li>
+                                  <li><a href="">Money Heist</a></li>
+                                  <li><a href="pacific-rim.html">Pacific Rim</a></li>
+                                  <li><a href="">RRR</a></li>
+                                  <li><a href="shang-chi.html">Shang-Chi</a></li>
+                                  <li><a href="">Sonic The Hedgehog</a></li>
+                                  <li><a href="soulland.html">Soul Land</a></li>
+                                  <li><a href="">Sqiud Game</a></li>
+                                  <li><a href="">Steallar Transformations</a></li>
+                                  <li><a href="dlotik.html">The Daily Life of the Immortal King</a></li>
+                                  <li><a href="suicide-squad.html">The Suicide Squad</a></li>
+                                  <li><a href="venom2.html">Venom</a></li>
+                                  <li><a href="vincenzo.html">Vincenzo</a></li>
+                                  <li><a href="">W Two Worlds</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="profile"><a href="#" onclick="toggle()"><i class="far fa-user fa-lg"></i></a>
+                          <div class="list-menu1" id="popup">
+                              <ul>
+                                  <li><a href="">Profile</a></li>
+                                  <li><a href="">Wishlist</a></li>
+                                  <li><a href="../landing-page.html" onclick="alert('You will now Logout.')">Logout</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+   </header>
+
+    <!-- ------------body------------- -->
+    <div class="screensaver"> </div>
+
+    <div class="main-content">
+        <div class="about-site">
+            <div class="text">
+                <h2 class="aboutus-heading">About Us</h2>
+                <p>Hopefully you are enjoying streaming videos in Animix Play.
+                Animix Play tries its best to provide you latest movies, webseries and animes in highest resolution possible.
+                Entertainment is for everyone so here we provide every kind of content that too for free of cost.
+                Nobody likes to watch ads disturbing their stream so we created an ad free viewing experience site for all.</p>
+            </div>
+        </div>
+        <section class="about-members container">
+            <h2 class="members-heading">Creators</h2>
+            <div class="members-flex">
+                <div class="data-show show1">
+                    <div class="members-img">
+                        <img class="mypic" src="./images/harshitx.png" alt="Harshit">
+                    </div>
+                    <div class="member-description">
+                        <h2 class="member-title">Harshit Patel</h2>
+                        <p>Main Creator, Designer, Script Control, Customization</p>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/___._lord.stark_.___/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto: harshit0580.be21@chitkara.edu.in" title="E-Mail"><i class="fas fa-envelope"></i></a>
+                            <a href="https://t.me/Killer_realm_god" title="Telegram" target="_blank"><i class="fas fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-show show2">
+                    <div class="members-img">
+                        <img src="./images/harshita.jpeg" alt="Harshita">
+                    </div>
+                    <div class="member-description">
+                        <h2 class="member-title">Harshita</h2>
+                        <p>Content Handler, Error Correction, Layout Creator</p>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/harshita.mann_/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto: harshita0584.be21@chitkara.edu.in" title="E-Mail"><i class="fas fa-envelope"></i></a>
+                            <a href="https://t.me/harshitaa_15" title="Telegram" target="_blank"><i class="fas fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-show show3">
+                    <div class="members-img">
+                        <img src="./images/harbani.jpg" alt="Harbani">
+                    </div>
+                    <div class="member-description">
+                        <h2 class="member-title">Harbani</h2>
+                        <p>Landing Pages, Animation Helper, Bugs Detection</p>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/harbanisharma/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto: harbani0543.be21@chitkara.edu.in" title="E-Mail"><i class="fas fa-envelope"></i></a>
+                            <a href="https://t.me/9306184616" title="Telegram" target="_blank"><i class="fas fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="donation">
+            <p>
+                We provide here videos in high quality in well modernized website layout and doing so it takes lots of efforts to keep maintaing site and upload all videos.
+                So to help us, you can donate some money of your own will, for that click on the button present right side. Your help will be deeply appreciated..
+            </p>
+            <a href="./images/qr.jpg" target="_blank" onclick="show_blur()" class="donation-btn">Donate Now</a>
+        </div>
+        <div class="disclaimer">
+            <h2><u>Disclaimer</u>:</h2>
+            <p>
+            The videos shown on this website are not owned by the owner of the website.
+            This webiste content and informations are gathered from various websites and presented before you. <br>
+            Contents gathered from: <a href="https://www.youtube.com/">Youtube</a>, <a href="https://www.imdb.com/">IMDB</a>, <a href="https://www.google.co.in/">Google</a>, <a href="https://myanimelist.net/">MyAnimeList</a>, etc.
+            </p>
+        </div>
+
+    </div>
+    <!-- <div class="scanner-img">
+        <img src="./images/qr.jpg" alt="">
+    </div> -->
+
+   <!-- ----------- footer ----------- -->
+   <footer class="footer">
+      <div class="footer-img"><img src="./images/logo2.webp" class="footer-img"></div>
+      <div>
+          <ul class="footer-list">
+              <li><a href="">Terms and Privacy Notice</a></li>
+              <li><a href="feedback.html">Send us feedback</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li class="footer-extra">&copy;&ensp;2021-2022, Animix.com, Inc. or its affiliates</li>
+          </ul>
+      </div>
+  </footer>
+
+
+  <!-- search and navbar script -->
+ <script src="new_header.js"></script>
+ <script>
+    const search = () =>{
+    let filter = document.getElementById('myInput').value.toUpperCase();
+
+    let ul = document.getElementById('myUL');
+
+    let li = ul.getElementsByTagName('li');
+
+    for(var i=0; i<li.length;i++)
+    {
+       let a = li[i].getElementsByTagName('a')[0];
+
+       let textValue = a.textContent || a.innerHTML;
+
+       if(textValue.toUpperCase().indexOf(filter)> -1)
+       {
+          li[i].style.display = '';
+       }
+       else{
+          li[i].style.display = 'none';
+       }
+    }
+ }
+ </script>
+
+ <script>
+     function toggle(){
+         var popup=document.getElementById('popup');
+         popup.classList.toggle('active');
+     }
+     
+ </script>
+ <!-- <script>
+     function show_blur(){
+        var blur=document.getElementsByClassName('main-content');
+         blur.classList.toggle('active');
+         var show=document.getElementsByClassName('scanner-img');
+         show.style.display='block';
+     }
+ </script> -->
+
+  <!-- For smooth scrolling -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+</body>
+</html>
